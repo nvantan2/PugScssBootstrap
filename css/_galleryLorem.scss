@@ -1,0 +1,37 @@
+$base-number: 4vw;
+
+.lorem_grid{
+    &__item{
+        height: 22vw;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-origin: content-box;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover{
+            transform: translateY(-6px);
+            transition: all 0.5s;
+            transform: scale(1.1);
+        }
+
+        &:first-child{
+            background-image: url(../images/heart-529607_1920.jpg);
+        }
+        &:nth-child(2){
+            margin-top: $base-number;
+            background-image: url(../images/img-3.jpg);
+        }
+        &:nth-child(3){
+            margin-top: $base-number * 2;
+            background-image: url(../images/img-4.jpg);
+        }
+        &:last-child{
+            margin-top: $base-number * 3;
+            background-image: url(../images/img-4j.jpg);
+        }
+    }
+}

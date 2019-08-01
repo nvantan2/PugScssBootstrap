@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+.section{
+    &__icon{
+        .fas {
+            color: #5e9a8e;
+            font-size: 110%;
+        }
+
+        .fa-dove:last-child {
+            transform: rotateY(180deg)
+        }
+    }
+    &__desc {
+        width: 200px;
+        font-family: 'Lobster', cursive;
+        font-size: 120%;
+        padding: 6px 15px;
+        border-bottom: 2px solid rgba(94, 154, 142, 0.1);
+        border-top: 2px solid rgba(94, 154, 142, 0.1);
+        background-color: rgba(94, 154, 142, 0.1);
+        color: #848383;
+    }
+}
+
+@import '_headerNav';
+
+@import '_banner';
+
+@import '_couple';
+
+@import '_timeLine';
+
+@import '_galleryLorem';
+
+@import '_siteFooter';

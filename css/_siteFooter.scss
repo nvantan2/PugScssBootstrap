@@ -1,0 +1,29 @@
+.site__footer{
+    margin-top: 60px;
+    height: 600px;
+    background-image: url(../images/heart-4340306_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        top: -25px;
+
+        .fa-heartbeat {
+            font-size: 550%;
+            color: pink;
+        }
+    }
+
+    &__content{
+        color: #fff;
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+        font-size: 500%;
+        letter-spacing: 1px;
+    }
+}

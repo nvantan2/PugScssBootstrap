@@ -1,0 +1,36 @@
+mixin section(sectionDesc,sectionId)
+        .section__title.text-center(id=`${sectionId}`)
+            p.section__icon
+                i.fas.fa-dove
+                i.fas.fa-heartbeat
+                i.fas.fa-dove
+            p.section__desc.mx-auto= sectionDesc
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Wedding
+        //- link(rel="stylesheet", href="../bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css")
+        //- link(rel="stylesheet", href="../css/reset.css")
+        link(rel="stylesheet", href="../bootstrap-4.3.1-dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="../css/reset.css")
+        link(rel="stylesheet", href="../css/style.css")
+        script(src="https://kit.fontawesome.com/b4b7fd911f.js")
+    body
+        div
+            include ./_header-nav.jade
+            // End header nav
+            include ./_banner.jade
+            // End banner 
+            include ./_couple.jade
+            // End couple
+            +section("Our Love Story", "Story")
+            include ./_timeLine.jade
+            // End story
+            +section("Our Gallery", "Gallery")
+            include ./_galleryLorem.jade
+            // End gallery lorem
+            include ./_siteFooter.jade

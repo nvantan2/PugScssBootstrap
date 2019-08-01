@@ -1,0 +1,52 @@
+.header_nav {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+    .row {
+        align-items: center;
+    }
+
+    &__logo {
+
+        a {
+            color: #5e9a8e !important;
+            display: inline-block;
+            font-family: 'Great Vibes', cursive;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .navbar{
+        padding: 0;
+    }
+    .nav-link {
+        padding: 20px 30px !important;
+        color: #5e9a8e !important;
+        display: inline-block;
+        transition: 0.5s ease-in;
+        font-size: 120%;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: pink;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            transition: .5s ease-in;
+        }
+
+        &:hover {
+            color: pink !important;
+            transition: .5s ease-in;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+    }
+}
